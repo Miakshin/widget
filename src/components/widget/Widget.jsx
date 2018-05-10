@@ -1,30 +1,28 @@
 import React, { Component } from 'react';
-import Button from './button/Button'
-import Frame from './frame/Frame'
-import styles from './Widget.css'
-import mockData from '../../mockData'
-
+import Button from './button/Button';
+import Frame from './frame/Frame';
+import styles from './Widget.css';
+import mockData from '../../mockData';
 
 
 class Widget extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        opened: props.opened || false,
-        data: props.data || []
-      };
-  }
+      opened: props.opened || false,
+      data: props.data || [],
+    };
 
-  handleOpen = () => {
-    this.setState({opened: !this.state.opened})
+    this.handleOpen = () => {
+      this.setState({ opened: !this.state.opened });
+    };
   }
 
   render() {
-
     return (
       <div
         className={styles.main}
-        style={this.state.opened ? {'right':'30px', 'transition': '.5s'} : {'right':'-500px', 'transition': '.5s'}}
+        style={this.state.opened ? { right: '30px', transition: '.5s' } : { right: '-500px', transition: '.5s' }}
       >
         <Frame
           isOpened={this.state.opened}
