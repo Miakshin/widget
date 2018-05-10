@@ -1,0 +1,35 @@
+:local(.main){
+  display: inline-block;
+  height: 520px;
+  width: 250px;
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  margin: 0px;
+  padding: 0px;
+  outline: none;
+}
+:local(.main) ::-webkit-scrollbar{
+   width: 3px;
+   height: 3px;
+}
+:local(.main) ::-webkit-scrollbar-button{
+   background-color: #ffffff00;
+}
+:local(.main) ::-webkit-scrollbar-track{
+   background-color: #ffffff00;
+}
+:local(.main) ::-webkit-scrollbar-track-piece{
+   background-color: #ffffff00;
+}
+:local(.main) ::-webkit-scrollbar-thumb{
+   height: 50px;
+   background-color: #3b85a0;
+   border-radius: 5px;
+}
+:local(.main) ::-webkit-scrollbar-corner{
+   background-color: #ffffff00;
+}
+:local(.main) ::-webkit-resizer {
+   background-color: #ffffff00;
+}

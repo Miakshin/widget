@@ -1,0 +1,44 @@
+:local(.button){
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  border: 0px none;
+  background-image:  url("../../../../public/assets/chat-img.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  background-color: rgb(59, 133, 160);
+  margin: 20px 0px;
+  color: rgb(255, 255, 255);
+  box-shadow: silver 0px 0px 31px 4px;
+  cursor: pointer;
+  outline: none;
+  transition: .5s;
+}
+:local(.buttonOpened){
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  position: fixed;
+  bottom: 0px;
+  right: 30px;
+  border: 0px;
+  background-image:  url("../../../../public/assets/close.png");
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  background-color: rgb(59, 133, 160);
+  margin: 20px 0px;
+  color: rgb(255, 255, 255);
+  box-shadow: silver 0px 0px 31px 4px;
+  cursor: pointer;
+  outline: none;
+  transition: .5s;
+}
+:local(.buttonOpened):hover,
+:local(.button):hover{
+  box-shadow: silver 0px 0px 31px 10px;
+}
